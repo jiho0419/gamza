@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+}
+
+
+header{ /*학복스로고와 검색 로그인*/
+    display: block; 
+    height: 88px;
+    border-bottom: 1px solid #ecedf1; /*밑줄*/
+}
+.box1{
+    display: flex;
+    justify-content: space-between; /*양 옆으로 배치*/
+    height: 88px;
+    margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
+    width: 80%; /*header의 80%만 사용*/
+    max-width: 1032px;
+}
+.uvs-logo{
+    background-image: url(https://www.univstore.com/image/logo.png);
+    background-size: contain; /*이미지 비율 유지하면서 내부에 맞게 적용*/
+    background-position: center;
+    background-repeat: no-repeat; /*배경 이미지를 한번만 표시*/
+    width: 280px;
+    height: 88px;
+    display: block;
+}
+.button-box1{
+    display: flex;
+    height: 88px;
+    line-height: 88px; /*행의 높이 텍스트 줄 간격*/
+    
+}
+a.search-button{
+    margin-right: 32px;
+    color: #787a87; 
+    font-size: 13px;
+    text-decoration: none; /*a태그 밑줄 없음*/
+}
+a.login-button{
+    color: #787a87;
+    font-size: 13px;
+    text-decoration: none; /*a태그 밑줄 없음*/
+}
+
+
+
+.container2{ /*카테고리 버튼들*/
+    display: block;
+    height: 60px;
+    border-bottom: 1px solid #ecedf1; /*밑줄*/
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
+    width: 80%; /*container1 80%로만 사용*/
+    max-width: 1032px;
+    align-items: center; /*안에 있는 a태그들를 가운데로 배치*/
+}
+.right-button{
+    margin-left: -12px;
+}
+.left-button{
+    margin-right: -12px;
+}
+.rbutton{
+    display: inline-block; /*인라인 블록으로 일자로 만듬*/
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold; 
+    text-decoration: none; /* a태그 밑줄 없음*/
+}
+.lbutton{
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold; 
+    text-decoration: none; /* a태그 밑줄 없음*/
+}
+
+
+.container3{/*광고*/
+    display: block;
+    height: 525px;
+    background: rgb(241, 241, 241);
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
+    width: 80%; /*container1 80%로만 사용*/
+    max-width: 1032px;
+}
+.apple-pad{
+    background-image: url(https://image.univstore.com/20231023_apple_ipad_promotion_faf9f8_web_maintop.png);
+    background-size: contain; /*이미지 비율 유지하면서 내부에 맞게 적용*/
+    background-position: center;
+    background-repeat: no-repeat; /*배경 이미지를 한번만 표시*/
+    width: 1032px; /*이미지를 가득 채우기 위해서 설정한 최대 크기로 설정*/
+    height: 525px; /*이미지를 가득 채우기 위해서 설정한 최대 크기로 설정*/
+    display: block;
+}
+
+
+.container4{
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
+    width: 80%; /*container1 80%로만 사용*/
+    max-width: 1032px;
+}
+.round-button {
+    display: flex;
+    flex-direction: column; /*수직으로*/
+    align-items: center;
+    justify-content: flex-end; /*밑으로*/
+    width: 90px;
+    height: 90px;
+    background-size: cover; /*이미지 원본이 전체가 들어갈 수 있게*/
+    background-repeat: no-repeat; /*배경 이미지를 한번만 표시*/
+    background-position: center;
+    border-radius: 50%; /*원*/
+    text-decoration: none; /*a태그 밑줄 없애기*/
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-box p {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0 -40px;
+}
+
+
+.container5{
+    background-color: rgb(249, 244, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
+}
+.kakao-pay{
+    background-image: url(https://image.univstore.com/20231101_payment_event_mainline.jpg);
+    background-size: contain; /*이미지 비율 유지하면서 내부에 맞게 적용*/
+    background-position: center;
+    background-repeat: no-repeat; /*배경 이미지를 한번만 표시*/
+    width: 1032px;
+    height: 84px; /*이미지를 가득 채우기 위해서 설정한 최대 크기로 설정*/
+    display: block;
+}

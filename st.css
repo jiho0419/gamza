@@ -57,7 +57,7 @@ a.login-button{
     justify-content: space-between;
     height: 60px;
     margin: 0 auto; /*가로 중앙 정렬하기 위해서 사용*/
-    width: 80%; /*container1 80%로만 사용*/
+    width: 80%; /*container2 80%로만 사용*/
     max-width: 1032px;
     align-items: center; /*안에 있는 a태그들를 가운데로 배치*/
 }
@@ -158,4 +158,76 @@ a.login-button{
     width: 1032px;
     height: 84px; /*이미지를 가득 채우기 위해서 설정한 최대 크기로 설정*/
     display: block;
+}
+
+
+.container6{   
+        display: block;
+        margin: 64px auto;
+        width: 80%; /*container6 80%로만 사용*/
+        max-width: 1032px;
+}
+.recommed-pick{
+    padding-bottom: 37px;
+    margin: 0px;
+}
+.box6{
+    display: flex;
+    justify-content: space-between;
+}
+.it-item{
+    display: inline-flex; /* 기본적으로 행으로 표시되도록 수정 */
+    flex-direction: column;
+    width: 245px;
+    height: 500px;
+}
+.item-picture{
+    background-color: rgb(245, 245,245);
+    background-size: cover; /*이미지 원본이 전체가 들어갈 수 있게*/
+    background-repeat: no-repeat; /*배경 이미지를 한번만 표시*/
+    background-position: center;
+    border-radius: 8px; /*둥근 사각형*/
+    margin-right: 8px;
+    width: 235px;
+    height: 250px;
+}
+.item-explanation{
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+}
+.corp {
+    text-decoration: none; /* a태그 밑줄 없음*/
+    font-size: 13px;
+    color: #787a87;
+}
+.item-corp{
+    text-decoration: none; /* a태그 밑줄 없음*/
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding-top: 6px;
+}
+.item-name{
+    margin: 6px 0px;
+    font-size: 13px;
+    color: #787a87;
+}
+.item-price{
+    margin: 6px 0px; 
+    text-decoration: line-through;
+    font-size: 13px;
+    color: #9092a1;
+}
+.item-sale
+{
+    background-color: #9092a1;
+    color: white;
+    font-size: 12px;
+    padding: 8px 16px;
+    text-align: center; 
+    width: max-content; /*넓이를 콘텐츠 사이즈로 딱 맞춤*/
+    font-weight: bold;
+    border-radius: 3px; /*외각을 둥글게*/
+    text-decoration: none; /* a태그 밑줄 없음*/
 }

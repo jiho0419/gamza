@@ -433,3 +433,38 @@ document.addEventListener('DOMContentLoaded', function () {
     container.innerHTML = companyHTML;
 });
 
+
+//comtainer10
+const image = [
+    { imageUrl: 'https://www.univstore.com/image/ic-money.png', 
+      title1: '대학생 혜택을 위한 저렴한 가격', 
+      title2: '다양한 유명 브랜드의 인기 상품을<br/>합리적인 가격으로 만나보세요.' },
+    { imageUrl: 'https://www.univstore.com/image/ic-payment.png', 
+      title1: '안전한 이니시스 결제 시스템 이용', 
+      title2: '국내 1위 PG사인 이니시스의<br/>결제 시스템을 사용하고 있습니다.' }
+  ];
+  
+  const ct10 = document.getElementById('ct10');
+  
+  image.map(imageData => {
+    const imageBox = document.createElement('div');
+    imageBox.classList.add('ct10-explanbox');
+  
+    const imageElement = document.createElement('div');
+    imageElement.classList.add('ct10-expicutre');
+    imageElement.style.backgroundImage = `url('${imageData.imageUrl}')`;
+  
+    const title1Element = document.createElement('div');
+    title1Element.classList.add('ct10-extitle1');
+    title1Element.textContent = imageData.title1;
+  
+    const title2Element = document.createElement('div');
+    title2Element.classList.add('ct10-extitle2');
+    title2Element.innerHTML = imageData.title2;  // 중간에 <br/>를 적용하기 위해서 textContent이 아니라 innerHTML를 사용
+
+    imageBox.appendChild(imageElement);
+    imageBox.appendChild(title1Element);
+    imageBox.appendChild(title2Element);
+  
+    ct10.appendChild(imageBox);
+  });
